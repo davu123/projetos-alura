@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class SistemaBancario {
 
-    // Classe que representa uma Conta Bancária
     static class ContaBancaria {
         private String nome;
         private String tipoConta;
@@ -14,12 +13,10 @@ public class SistemaBancario {
             this.saldo = saldoInicial;
         }
 
-        // Método para consultar o saldo
         public void consultarSaldo() {
             System.out.printf("Seu saldo atual é: R$ %.2f%n", saldo);
         }
 
-        // Método para transferir valor (retirada)
         public void transferirValor(double valor) {
             if (valor > saldo) {
                 System.out.println("Saldo insuficiente para realizar a transferência.");
@@ -29,13 +26,11 @@ public class SistemaBancario {
             }
         }
 
-        // Método para receber valor (depósito)
         public void receberValor(double valor) {
             saldo += valor;
             System.out.printf("Depósito de R$ %.2f realizado com sucesso!%n", valor);
         }
 
-        // Cabeçalho inicial com os dados do cliente
         public void exibirCabecalho() {
             System.out.println("********************");
             System.out.println("Cliente: " + nome);
@@ -48,13 +43,11 @@ public class SistemaBancario {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Criando uma conta bancária fictícia
         ContaBancaria conta = new ContaBancaria("João Silva", "Corrente", 1500.00);
         conta.exibirCabecalho();
 
         int opcao;
         do {
-            // Menu de operações
             System.out.println("********************");
             System.out.println("** Digite sua opção **");
             System.out.println("1 - Consultar saldo");
