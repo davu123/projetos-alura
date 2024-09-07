@@ -1,4 +1,4 @@
-Projetos Alura
+
 Este repositório reúne uma série de projetos que desenvolvi ao longo da minha trajetória na plataforma Alura. Através de desafios práticos e aulas interativas, tenho aplicado e aprimorado minhas habilidades em diversas áreas da tecnologia, como desenvolvimento web, programação, e análise de dados.
 
 Tecnologias e Ferramentas
